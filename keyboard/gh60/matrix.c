@@ -124,7 +124,6 @@ uint8_t matrix_scan(void)
             }
         }
     }
-
     return 1;
 }
 
