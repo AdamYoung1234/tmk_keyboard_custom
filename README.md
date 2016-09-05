@@ -21,6 +21,10 @@ In `Makefile` you need to set `TMK_DIR` to indicate core library location now.
     TMK_DIR = ../../tmk_core
 
 
+Warning
+--------
+IMPORTANT: hid_listen won't work since the console_task is modified.
+
 
 Projects
 --------
@@ -222,3 +226,9 @@ Coding Style
 Other Keyboard Firmware Projects
 ------------------
 You can learn a lot about keyboard firmware from these. See [Other Projects](https://github.com/tmk/tmk_keyboard/wiki/Other-Projects) other than TMK.
+
+
+Changes to original TMK core repo
+------------------
+- Add rawhid function (experimental)
+- Change the console task
