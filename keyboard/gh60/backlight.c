@@ -54,7 +54,7 @@ static const uint8_t backlight_table[] PROGMEM = {
 void backlight_enable(void)
 {
 #ifdef SOFTPWM_LED_ENABLE
-    softpwm_led_enable();
+    softpwm_led_enable_all();
 #else
 #if defined(GH60_REV_CHN)
     // Turn on PWM
@@ -80,7 +80,7 @@ void backlight_enable(void)
 void backlight_disable(void)
 {
 #ifdef SOFTPWM_LED_ENABLE
-    softpwm_led_disable();
+    softpwm_led_disable_all();
 #else
 #if defined(GH60_REV_CHN)
     // Turn off PWM
